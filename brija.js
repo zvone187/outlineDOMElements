@@ -5,7 +5,7 @@ document.querySelectorAll('*').forEach(el => {
 	let bgColor = count % 2 == 0 ? colors[count] : colors[numOfColors - count - 1];
 	let borderColor = count % 2 == 0 ? colors[numOfColors - count - 1] : colors[count];
 	el.style.backgroundColor = `rgba(${bgColor[0]}, ${bgColor[1]}, ${bgColor[2]}, 0.2)`;
-	el.style.border = `1px solid rgba(${borderColor[0]}, ${borderColor[1]}, ${borderColor[2]}, 0.8)`;
+	el.style.outline = `1px solid rgba(${borderColor[0]}, ${borderColor[1]}, ${borderColor[2]}, 0.8)`;
 	count++;
 	if (count >= colors.length) count = 0;
 })
